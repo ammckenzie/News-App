@@ -1,0 +1,54 @@
+/* line 1, ../scss/style.scss */
+body {
+  background: red;
+}
+
+/* line 5, ../scss/style.scss */
+.menu {
+  width: 70%;
+  display: none;
+  position: absolute;
+  background: orange;
+  z-index: 9;
+}
+
+/* Title Bar */
+/* line 14, ../scss/style.scss */
+.titlebar {
+  background: gray;
+  height: 50px;
+  /* expanding input CSS only */
+}
+/* line 18, ../scss/style.scss */
+.titlebar .title {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Georgia";
+}
+/* line 26, ../scss/style.scss */
+.titlebar .login {
+  width: 27px;
+  margin: 11px 0 0 26px;
+  position: absolute;
+}
+/* line 32, ../scss/style.scss */
+.titlebar .search {
+  width: 100px;
+  font-size: 25px;
+  background: green;
+  position: absolute;
+  right: 0;
+  height: 100px;
+}
+/* line 43, ../scss/style.scss */
+.titlebar #myInput {
+  width: 30px;
+  -webkit-transition: width 0.3s ease-in-out;
+}
+/* line 47, ../scss/style.scss */
+.titlebar #myInput:focus {
+  width: 100%;
+  -webkit-transition: width 0.5s ease-in-out;
+}
