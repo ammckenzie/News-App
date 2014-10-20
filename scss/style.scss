@@ -12,9 +12,10 @@ body {
 
 .menu {
 	width:70%;
-	height:100%;
+	min-height:100%;
 	/*display:none;*/
 	position: absolute;
+	margin-left:-100%;
 	background: #fff;
 	z-index:9;
 
@@ -305,9 +306,9 @@ body {
 
 .grayout {
 	width:100%;
-	height:100%;
-	/*display:none;*/
-	position: absolute;
+	min-height:100%;
+	display:none;
+	position: fixed;
 	background: #000;
 	z-index:8;
 	opacity: 0.8;
@@ -319,6 +320,9 @@ body {
 	background: #fff;
 	height: 55px;
 	box-shadow: 0px 1px 1px #888888;
+	position:fixed;
+	z-index: 1;
+	width:100%;
 
 	.title {
 		font-size:20px;
@@ -354,61 +358,67 @@ body {
 	}
 }
 
-.article-list {
-	height:100%;
+.article-container{
 
-	.single {
-		height:100px;
-		background-color:#fff;
-		margin-top:10px;
-		box-shadow: 0px 1px 1px #888888;
+	padding-top:55px;
 
-		p.articletitle{
-		font-family: 'Avenir-Medium', Helvetica, Arial, sans-serif;
-		font-size: 15px;
-		margin-left: 110px;
-		padding-top: 9px;
+	.article-list {
+		height:100%;
+
+		.single {
+			height:100px;
+			background-color:#fff;
+			margin-top:10px;
+			box-shadow: 0px 1px 1px #888888;
+
+			p.articletitle{
+			font-family: 'Avenir-Medium', Helvetica, Arial, sans-serif;
+			font-size: 15px;
+			margin-left: 110px;
+			padding-top: 9px;
+			}
+
+			p.articlebody{
+			font-family: 'Avenir', Helvetica, Arial, sans-serif;
+			font-weight: 200;
+			font-size: 13px;
+			margin-left: 110px;
+			margin-right:10px;
+			margin-top: -3px;
+			}
+
+			p.articlesite{
+			font-family: 'Avenir', Helvetica, Arial, sans-serif;
+			font-weight: 200;
+			font-size: 13px;
+			margin-left: 110px;
+			margin-right:10px;
+			margin-top: -3px;
+			}
+
+			.varible{
+				margin-top:-5px;
+			}
+			.variablelist li{
+			display: inline;
+			list-style-type: none;
+			font-family: 'Avenir', Helvetica, Arial, sans-serif;
+			font-weight: 200;
+			font-size:13px;
+			color:#aaa;
+			margin-left: 10px;
+			margin-right:10px;
+			padding-right: 2px;
+			}
+
+			.placeholderimage {
+			width:100px;
+			height:100px;
+			background-color:#aaa;
+			float:left;
+			}	
 		}
 
-		p.articlebody{
-		font-family: 'Avenir', Helvetica, Arial, sans-serif;
-		font-weight: 200;
-		font-size: 13px;
-		margin-left: 110px;
-		margin-right:10px;
-		margin-top: -3px;
-		}
-
-		p.articlesite{
-		font-family: 'Avenir', Helvetica, Arial, sans-serif;
-		font-weight: 200;
-		font-size: 13px;
-		margin-left: 110px;
-		margin-right:10px;
-		margin-top: -3px;
-		}
-
-		.varible{
-			margin-top:-5px;
-		}
-		.variablelist li{
-		display: inline;
-		list-style-type: none;
-		font-family: 'Avenir', Helvetica, Arial, sans-serif;
-		font-weight: 200;
-		font-size:13px;
-		color:#aaa;
-		margin-left: 10px;
-		margin-right:10px;
-		padding-right: 2px;
-		}
-
-		.placeholderimage {
-		width:100px;
-		height:100px;
-		background-color:#aaa;
-		float:left;
-		}	
-	}
+	}	
 }
 

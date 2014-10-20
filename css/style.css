@@ -15,13 +15,14 @@ body {
 /* line 13, ../scss/style.scss */
 .menu {
   width: 70%;
-  height: 100%;
+  min-height: 100%;
   /*display:none;*/
   position: absolute;
+  margin-left: -100%;
   background: #fff;
   z-index: 9;
 }
-/* line 21, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
 .menu .done {
   width: 95%;
   height: 30px;
@@ -34,7 +35,7 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 400;
 }
-/* line 34, ../scss/style.scss */
+/* line 35, ../scss/style.scss */
 .menu .tags {
   width: 95%;
   height: 30px;
@@ -49,7 +50,7 @@ body {
   border: 1px solid;
   border-radius: 0px;
 }
-/* line 49, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 .menu .menutags {
   width: 95%;
   height: 340px;
@@ -57,34 +58,34 @@ body {
   margin-top: -10px;
   margin-left: 5px;
 }
-/* line 56, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 .menu .menutags .input-group {
   width: 95%;
 }
-/* line 60, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 .menu .menutags .form-control {
   margin-left: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 67, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .menu .menutags .input-group .form-control:last-child, .menu .menutags .input-group-addon:last-child, .menu .menutags .input-group-btn:last-child > .btn, .menu .menutags .input-group-btn:last-child > .btn-group > .btn, .menu .menutags .input-group-btn:last-child > .dropdown-toggle, .menu .menutags .input-group-btn:first-child > .btn:not(:first-child), .menu .menutags .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-/* line 72, ../scss/style.scss */
+/* line 73, ../scss/style.scss */
 .menu .menutags .input-group .form-control:first-child, .menu .menutags .input-group-addon:first-child, .menu .menutags .input-group-btn:first-child > .btn, .menu .menutags .input-group-btn:first-child > .btn-group > .btn, .menu .menutags .input-group-btn:first-child > .dropdown-toggle, .menu .menutags .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .menu .menutags .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-/* line 77, ../scss/style.scss */
+/* line 78, ../scss/style.scss */
 .menu .menutags .singleitem {
   width: 95%;
   height: 20px;
   margin-left: 5px;
   margin-top: 5px;
 }
-/* line 83, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 .menu .menutags .singleitem .sitename {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -93,18 +94,18 @@ body {
   margin-top: 5px;
   margin-left: 5px;
 }
-/* line 92, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 .menu .menutags .singleitem .onoffswitch {
   float: right;
   margin-right: 5px;
 }
-/* line 97, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 .menu .menutags .singleitem input#toggle {
   max-height: 0;
   max-width: 0;
   opacity: 0;
 }
-/* line 103, ../scss/style.scss */
+/* line 104, ../scss/style.scss */
 .menu .menutags .singleitem input#toggle + label {
   display: block;
   position: relative;
@@ -114,7 +115,7 @@ body {
   width: 50px;
   border-radius: 15px;
 }
-/* line 113, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .menu .menutags .singleitem input#toggle + label:before {
   content: "";
   position: absolute;
@@ -129,7 +130,7 @@ body {
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-/* line 128, ../scss/style.scss */
+/* line 129, ../scss/style.scss */
 .menu .menutags .singleitem input#toggle + label:after {
   content: "";
   position: absolute;
@@ -145,17 +146,17 @@ body {
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-/* line 144, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .menu .menutags .singleitem input#toggle:checked + label:before {
   width: 50px;
   background: #13bf11;
 }
-/* line 149, ../scss/style.scss */
+/* line 150, ../scss/style.scss */
 .menu .menutags .singleitem input#toggle:checked + label:after {
   left: 30px;
   box-shadow: inset 0 0 0 1px #13bf11, 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 158, ../scss/style.scss */
+/* line 159, ../scss/style.scss */
 .menu .sites {
   width: 95%;
   height: 30px;
@@ -170,7 +171,7 @@ body {
   border: 1px solid;
   border-radius: 0px;
 }
-/* line 173, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .menu .menusites {
   width: 95%;
   height: 340px;
@@ -178,34 +179,34 @@ body {
   margin-top: -10px;
   margin-left: 5px;
 }
-/* line 181, ../scss/style.scss */
+/* line 182, ../scss/style.scss */
 .menu .menusites .input-group {
   width: 95%;
 }
-/* line 185, ../scss/style.scss */
+/* line 186, ../scss/style.scss */
 .menu .menusites .form-control {
   margin-left: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* line 192, ../scss/style.scss */
+/* line 193, ../scss/style.scss */
 .menu .menusites .input-group .form-control:last-child, .menu .menusites .input-group-addon:last-child, .menu .menusites .input-group-btn:last-child > .btn, .menu .menusites .input-group-btn:last-child > .btn-group > .btn, .menu .menusites .input-group-btn:last-child > .dropdown-toggle, .menu .menusites .input-group-btn:first-child > .btn:not(:first-child), .menu .menusites .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-/* line 197, ../scss/style.scss */
+/* line 198, ../scss/style.scss */
 .menu .menusites .input-group .form-control:first-child, .menu .menusites .input-group-addon:first-child, .menu .menusites .input-group-btn:first-child > .btn, .menu .menusites .input-group-btn:first-child > .btn-group > .btn, .menu .menusites .input-group-btn:first-child > .dropdown-toggle, .menu .menusites .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle), .menu .menusites .input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-/* line 202, ../scss/style.scss */
+/* line 203, ../scss/style.scss */
 .menu .menusites .singleitem {
   width: 95%;
   height: 20px;
   margin-left: 5px;
   margin-top: 5px;
 }
-/* line 208, ../scss/style.scss */
+/* line 209, ../scss/style.scss */
 .menu .menusites .singleitem .sitename {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -214,18 +215,18 @@ body {
   margin-top: 5px;
   margin-left: 5px;
 }
-/* line 217, ../scss/style.scss */
+/* line 218, ../scss/style.scss */
 .menu .menusites .singleitem .onoffswitch {
   float: right;
   margin-right: 5px;
 }
-/* line 222, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 .menu .menusites .singleitem input#toggle {
   max-height: 0;
   max-width: 0;
   opacity: 0;
 }
-/* line 228, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 .menu .menusites .singleitem input#toggle + label {
   display: block;
   position: relative;
@@ -235,7 +236,7 @@ body {
   width: 50px;
   border-radius: 15px;
 }
-/* line 238, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 .menu .menusites .singleitem input#toggle + label:before {
   content: "";
   position: absolute;
@@ -250,7 +251,7 @@ body {
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-/* line 253, ../scss/style.scss */
+/* line 254, ../scss/style.scss */
 .menu .menusites .singleitem input#toggle + label:after {
   content: "";
   position: absolute;
@@ -266,17 +267,17 @@ body {
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
-/* line 269, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 .menu .menusites .singleitem input#toggle:checked + label:before {
   width: 50px;
   background: #13bf11;
 }
-/* line 274, ../scss/style.scss */
+/* line 275, ../scss/style.scss */
 .menu .menusites .singleitem input#toggle:checked + label:after {
   left: 30px;
   box-shadow: inset 0 0 0 1px #13bf11, 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-/* line 284, ../scss/style.scss */
+/* line 285, ../scss/style.scss */
 .menu .loginsmtext {
   font-size: 14px;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -284,24 +285,24 @@ body {
   margin-left: 5px;
   margin-top: 15px;
 }
-/* line 292, ../scss/style.scss */
+/* line 293, ../scss/style.scss */
 .menu .smcontainer {
   width: 100%;
   margin-left: 5px;
   margin-top: 5px;
 }
-/* line 298, ../scss/style.scss */
+/* line 299, ../scss/style.scss */
 .menu .smicon {
   width: 35px;
   margin-right: 2px;
 }
 
-/* line 306, ../scss/style.scss */
+/* line 307, ../scss/style.scss */
 .grayout {
   width: 100%;
-  height: 100%;
-  /*display:none;*/
-  position: absolute;
+  min-height: 100%;
+  display: none;
+  position: fixed;
   background: #000;
   z-index: 8;
   opacity: 0.8;
@@ -310,14 +311,17 @@ body {
 }
 
 /* Title Bar */
-/* line 318, ../scss/style.scss */
+/* line 319, ../scss/style.scss */
 .titlebar {
   background: #fff;
   height: 55px;
   box-shadow: 0px 1px 1px #888888;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   /* expanding input CSS only */
 }
-/* line 323, ../scss/style.scss */
+/* line 327, ../scss/style.scss */
 .titlebar .title {
   font-size: 20px;
   font-weight: bold;
@@ -326,50 +330,54 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
-/* line 332, ../scss/style.scss */
+/* line 336, ../scss/style.scss */
 .titlebar .login {
   width: 30px;
   margin: 12px 0 0 15px;
   position: absolute;
 }
-/* line 338, ../scss/style.scss */
+/* line 342, ../scss/style.scss */
 .titlebar .search {
   width: 25px;
   position: absolute;
   float: right;
   margin: -27px 0 0 280px;
 }
-/* line 347, ../scss/style.scss */
+/* line 351, ../scss/style.scss */
 .titlebar #myInput {
   width: 30px;
   -webkit-transition: width 0.3s ease-in-out;
 }
-/* line 351, ../scss/style.scss */
+/* line 355, ../scss/style.scss */
 .titlebar #myInput:focus {
   width: 100%;
   -webkit-transition: width 0.5s ease-in-out;
 }
 
-/* line 357, ../scss/style.scss */
-.article-list {
+/* line 361, ../scss/style.scss */
+.article-container {
+  padding-top: 55px;
+}
+/* line 365, ../scss/style.scss */
+.article-container .article-list {
   height: 100%;
 }
-/* line 360, ../scss/style.scss */
-.article-list .single {
+/* line 368, ../scss/style.scss */
+.article-container .article-list .single {
   height: 100px;
   background-color: #fff;
   margin-top: 10px;
   box-shadow: 0px 1px 1px #888888;
 }
-/* line 366, ../scss/style.scss */
-.article-list .single p.articletitle {
+/* line 374, ../scss/style.scss */
+.article-container .article-list .single p.articletitle {
   font-family: 'Avenir-Medium', Helvetica, Arial, sans-serif;
   font-size: 15px;
   margin-left: 110px;
   padding-top: 9px;
 }
-/* line 373, ../scss/style.scss */
-.article-list .single p.articlebody {
+/* line 381, ../scss/style.scss */
+.article-container .article-list .single p.articlebody {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 13px;
@@ -377,8 +385,8 @@ body {
   margin-right: 10px;
   margin-top: -3px;
 }
-/* line 382, ../scss/style.scss */
-.article-list .single p.articlesite {
+/* line 390, ../scss/style.scss */
+.article-container .article-list .single p.articlesite {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 200;
   font-size: 13px;
@@ -386,12 +394,12 @@ body {
   margin-right: 10px;
   margin-top: -3px;
 }
-/* line 391, ../scss/style.scss */
-.article-list .single .varible {
+/* line 399, ../scss/style.scss */
+.article-container .article-list .single .varible {
   margin-top: -5px;
 }
-/* line 394, ../scss/style.scss */
-.article-list .single .variablelist li {
+/* line 402, ../scss/style.scss */
+.article-container .article-list .single .variablelist li {
   display: inline;
   list-style-type: none;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -402,8 +410,8 @@ body {
   margin-right: 10px;
   padding-right: 2px;
 }
-/* line 406, ../scss/style.scss */
-.article-list .single .placeholderimage {
+/* line 414, ../scss/style.scss */
+.article-container .article-list .single .placeholderimage {
   width: 100px;
   height: 100px;
   background-color: #aaa;

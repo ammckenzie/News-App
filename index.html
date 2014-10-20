@@ -3,12 +3,13 @@
 	<head>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/switchery.css">
 		<meta name="viewport" content="width=device-width, user-scalable=no" />
 	</head>
 
 	<body>
 		<div class="menu">
-			<p><a class="btn btn-primary btn-md done" role="button">Done</a></p>
+			<p><a class="btn btn-primary btn-md done flyout-done" role="button">Done</a></p>
 
 
 			<p><a class="btn btn-primary btn-md sites" id="showmenusites" role="button">Sites</a></p>
@@ -28,6 +29,9 @@
 
 				<div class="singleitem">
 					<div class="sitename">New York Times</div>
+					<input type="checkbox" name="toggle" id="toggle">
+		
+					<label for="toggle" class="onoffswitch"></label>
 				</div>
 
 				<div class="divideline"></div>
@@ -128,168 +132,159 @@
 		<div class="grayout">
 		</div>
 		<div class="wrap titlebar">
-			<img src="images/account.png" class="login" />
+			<img src="images/account.png" class="login flyout" />
 			<div class="title">App Title</div>
 			<img src="images/search.png" class="search" />
 			<!-- <span class="glyphicon glyphicon-search search"></span> -->
 		</div>
 
-		<div class="wrap article-list">
-			<div class="wrap single">
-				<div class="placeholderimage">
+		<div class="article-container">
+				<div class="wrap article-list">
+					<div class="wrap single">
+						<div class="placeholderimage">
+						</div>
+						<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
+
+						<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+
+						<div class="varible">
+						<ul class="variablelist">
+						<li>npr.org</a></li>
+						<li>6 hours ago</a></li>
+						<li>Tech</a></li>
+						</ul>
+						</div>
 				</div>
-				<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
 
-				<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+				<div class="wrap article-list">
+					<div class="wrap single">
+						<div class="placeholderimage">
+						</div>
+						<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
 
-				<div class="varible">
-				<ul class="variablelist">
-				<li>npr.org</a></li>
-				<li>6 hours ago</a></li>
-				<li>Tech</a></li>
-				</ul>
+						<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+
+						<div class="varible">
+						<ul class="variablelist">
+						<li>npr.org</a></li>
+						<li>6 hours ago</a></li>
+						<li>Tech</a></li>
+						</ul>
+						</div>
 				</div>
-		</div>
 
-		<div class="wrap article-list">
-			<div class="wrap single">
-				<div class="placeholderimage">
+
+				<div class="wrap article-list">
+					<div class="wrap single">
+						<div class="placeholderimage">
+						</div>
+						<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
+
+						<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+
+						<div class="varible">
+						<ul class="variablelist">
+						<li>npr.org</a></li>
+						<li>6 hours ago</a></li>
+						<li>Tech</a></li>
+						</ul>
+						</div>
 				</div>
-				<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
 
-				<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
 
-				<div class="varible">
-				<ul class="variablelist">
-				<li>npr.org</a></li>
-				<li>6 hours ago</a></li>
-				<li>Tech</a></li>
-				</ul>
+				<div class="wrap article-list">
+					<div class="wrap single">
+						<div class="placeholderimage">
+						</div>
+						<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
+
+						<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+
+						<div class="varible">
+						<ul class="variablelist">
+						<li>npr.org</a></li>
+						<li>6 hours ago</a></li>
+						<li>Tech</a></li>
+						</ul>
+						</div>
 				</div>
-		</div>
 
 
-		<div class="wrap article-list">
-			<div class="wrap single">
-				<div class="placeholderimage">
+				<div class="wrap article-list">
+					<div class="wrap single">
+						<div class="placeholderimage">
+						</div>
+						<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
+
+						<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+
+						<div class="varible">
+						<ul class="variablelist">
+						<li>npr.org</a></li>
+						<li>6 hours ago</a></li>
+						<li>Tech</a></li>
+						</ul>
+						</div>
 				</div>
-				<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
 
-				<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+				<div class="wrap article-list">
+					<div class="wrap single">
+						<div class="placeholderimage">
+						</div>
+						<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
 
-				<div class="varible">
-				<ul class="variablelist">
-				<li>npr.org</a></li>
-				<li>6 hours ago</a></li>
-				<li>Tech</a></li>
-				</ul>
+						<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+
+						<div class="varible">
+						<ul class="variablelist">
+						<li>npr.org</a></li>
+						<li>6 hours ago</a></li>
+						<li>Tech</a></li>
+						</ul>
+						</div>
 				</div>
-		</div>
 
+				<div class="wrap article-list">
+					<div class="wrap single">
+						<div class="placeholderimage">
+						</div>
+						<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
 
-		<div class="wrap article-list">
-			<div class="wrap single">
-				<div class="placeholderimage">
+						<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+
+						<div class="varible">
+						<ul class="variablelist">
+						<li>npr.org</a></li>
+						<li>6 hours ago</a></li>
+						<li>Tech</a></li>
+						</ul>
+						</div>
 				</div>
-				<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
 
-				<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+				<div class="wrap article-list">
+					<div class="wrap single">
+						<div class="placeholderimage">
+						</div>
+						<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
 
-				<div class="varible">
-				<ul class="variablelist">
-				<li>npr.org</a></li>
-				<li>6 hours ago</a></li>
-				<li>Tech</a></li>
-				</ul>
+						<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
+
+						<div class="varible">
+						<ul class="variablelist">
+						<li>npr.org</a></li>
+						<li>6 hours ago</a></li>
+						<li>Tech</a></li>
+						</ul>
+						</div>
 				</div>
-		</div>
-
-
-		<div class="wrap article-list">
-			<div class="wrap single">
-				<div class="placeholderimage">
-				</div>
-				<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
-
-				<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
-
-				<div class="varible">
-				<ul class="variablelist">
-				<li>npr.org</a></li>
-				<li>6 hours ago</a></li>
-				<li>Tech</a></li>
-				</ul>
-				</div>
-		</div>
-
-		<div class="wrap article-list">
-			<div class="wrap single">
-				<div class="placeholderimage">
-				</div>
-				<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
-
-				<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
-
-				<div class="varible">
-				<ul class="variablelist">
-				<li>npr.org</a></li>
-				<li>6 hours ago</a></li>
-				<li>Tech</a></li>
-				</ul>
-				</div>
-		</div>
-
-		<div class="wrap article-list">
-			<div class="wrap single">
-				<div class="placeholderimage">
-				</div>
-				<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
-
-				<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
-
-				<div class="varible">
-				<ul class="variablelist">
-				<li>npr.org</a></li>
-				<li>6 hours ago</a></li>
-				<li>Tech</a></li>
-				</ul>
-				</div>
-		</div>
-
-		<div class="wrap article-list">
-			<div class="wrap single">
-				<div class="placeholderimage">
-				</div>
-				<p class="articletitle">Lorem Ipsum Dolor Sit Amet</p>
-
-				<p class="articlebody">Maecenas mattis nulla eget maur element, nec dapibus est... </p>
-
-				<div class="varible">
-				<ul class="variablelist">
-				<li>npr.org</a></li>
-				<li>6 hours ago</a></li>
-				<li>Tech</a></li>
-				</ul>
-				</div>
-		</div>
-
+			</div>
 
 		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/scripts.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 
 
-  <script>$(document).ready(function() {
-        $('#showmenutags').click(function() {
-                $('.menutags').slideToggle("fast");
-        });
-    });</script>
-
-      <script>$(document).ready(function() {
-        $('#showmenusites').click(function() {
-                $('.menusites').slideToggle("fast");
-        });
-    });</script>
-
+ 
 
 	</body>
 </html>
