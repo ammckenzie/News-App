@@ -343,40 +343,77 @@ body {
   float: right;
   margin: -27px 0 0 280px;
 }
-/* line 351, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
+.titlebar .back {
+  width: 20px;
+  margin: 18px 0 0 10px;
+  position: absolute;
+}
+/* line 355, ../scss/style.scss */
+.titlebar .share {
+  width: 25px;
+  position: absolute;
+  float: right;
+  margin: -25px 0 0 280px;
+}
+/* line 364, ../scss/style.scss */
 .titlebar #myInput {
   width: 30px;
   -webkit-transition: width 0.3s ease-in-out;
 }
-/* line 355, ../scss/style.scss */
+/* line 368, ../scss/style.scss */
 .titlebar #myInput:focus {
   width: 100%;
   -webkit-transition: width 0.5s ease-in-out;
 }
 
-/* line 361, ../scss/style.scss */
+/* line 374, ../scss/style.scss */
 .article-container {
   padding-top: 55px;
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
 }
-/* line 365, ../scss/style.scss */
+/* line 378, ../scss/style.scss */
+.article-container a:link {
+  color: #000;
+  text-decoration: none;
+}
+/* line 384, ../scss/style.scss */
+.article-container a:visited {
+  color: #000;
+  text-decoration: none;
+}
+/* line 390, ../scss/style.scss */
+.article-container a:hover {
+  color: #000;
+  text-decoration: none;
+}
+/* line 396, ../scss/style.scss */
+.article-container a:active {
+  color: #000;
+  text-decoration: none;
+}
+/* line 402, ../scss/style.scss */
 .article-container .article-list {
   height: 100%;
 }
-/* line 368, ../scss/style.scss */
+/* line 405, ../scss/style.scss */
 .article-container .article-list .single {
   height: 100px;
   background-color: #fff;
   margin-top: 10px;
   box-shadow: 0px 1px 1px #888888;
 }
-/* line 374, ../scss/style.scss */
+/* line 411, ../scss/style.scss */
 .article-container .article-list .single p.articletitle {
   font-family: 'Avenir-Medium', Helvetica, Arial, sans-serif;
   font-size: 15px;
   margin-left: 110px;
   padding-top: 9px;
 }
-/* line 381, ../scss/style.scss */
+/* line 418, ../scss/style.scss */
 .article-container .article-list .single p.articlebody {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 200;
@@ -385,7 +422,7 @@ body {
   margin-right: 10px;
   margin-top: -3px;
 }
-/* line 390, ../scss/style.scss */
+/* line 427, ../scss/style.scss */
 .article-container .article-list .single p.articlesite {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   font-weight: 200;
@@ -394,11 +431,11 @@ body {
   margin-right: 10px;
   margin-top: -3px;
 }
-/* line 399, ../scss/style.scss */
+/* line 436, ../scss/style.scss */
 .article-container .article-list .single .varible {
   margin-top: -5px;
 }
-/* line 402, ../scss/style.scss */
+/* line 439, ../scss/style.scss */
 .article-container .article-list .single .variablelist li {
   display: inline;
   list-style-type: none;
@@ -410,7 +447,7 @@ body {
   margin-right: 10px;
   padding-right: 2px;
 }
-/* line 414, ../scss/style.scss */
+/* line 451, ../scss/style.scss */
 .article-container .article-list .single .placeholderimage {
   width: 100px;
   height: 100px;

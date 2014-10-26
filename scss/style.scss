@@ -346,6 +346,19 @@ body {
 		margin: -27px 0 0 280px;
 	}
 
+	.back {
+		width: 20px;
+		margin: 18px 0 0 10px;
+		position:absolute;
+	}
+
+	.share {
+		width: 25px;
+		position: absolute;
+		float:right;
+		margin: -25px 0 0 280px;
+	}
+
 
 	/* expanding input CSS only */
 	#myInput		{
@@ -361,6 +374,30 @@ body {
 .article-container{
 
 	padding-top:55px;
+		/* unvisited link */
+	a:link {
+	    color:#000;
+	    text-decoration: none;
+	}
+
+	/* visited link */
+	a:visited {
+	    color:#000;
+	    text-decoration: none;
+	}
+
+	/* mouse over link */
+	a:hover {
+	    color:#000;
+	    text-decoration: none;
+	}
+
+	/* selected link */
+	a:active {
+	    color:#000;
+	    text-decoration: none;
+	}
+
 
 	.article-list {
 		height:100%;
