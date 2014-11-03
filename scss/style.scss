@@ -299,6 +299,7 @@ body {
 	.smicon{
 		width:35px;
 		margin-right:2px;
+		margin-bottom:10px;
 	}
 
 }
@@ -342,9 +343,88 @@ body {
 	.search {
 		width: 25px;
 		position: absolute;
-		float:right;
-		margin: -27px 0 0 280px;
+		right: 0;
+		margin: -27px 10px 0 280px;
 	}
+
+	/* Search Bar */
+
+					.wrapper {
+					 position: relative;
+					 overflow: hidden;
+					 width: 300px;
+				     height: 60px;
+				     margin-top:-47px;
+				     margin-left:70px;
+					/*border-radius: 5px;*/
+					}
+					#search-text{
+					  /*  position: float;
+					    bottom: 10px;
+					    font-size: 30px;
+					    font-family: arial;
+					    color: #DDDDDD;*/
+					    transition: .45s;
+					}
+
+					.search-transition {
+					    opacity: 0.0;
+					}
+
+					#slide-left {
+					    position: absolute;
+					    /*background: #BDB5C2;*/
+					    width: 200px;
+					    height: 40px;
+					    bottom: 10px;
+					    /*border-radius: 5px;*/
+					    transition: .45s;
+					    left: 205px;
+					    text-align: center;
+					}
+					.slide-left-secondary {
+					    left: 75px !important;
+					}
+					#slide-right {
+					    position: absolute;
+					    /*background: #F9F7FA;*/
+					    width: 200px;
+					    height: 40px;
+					    bottom: 10px;
+					    /*border-radius: 5px;*/
+					    transition: .45s;
+					    left: 240px;
+					    text-align: center;
+					    border-left: 1px solid black;
+					}
+					input {
+					    position: absolute;
+					    left: 35px;
+					    top: 10px;
+					    width: 150px;
+					    height: 25px;
+					    font-size: 13px;
+					    /*border: none;*/
+					    border-radius: 5px;
+					    border-width: 1px;
+					    border-color: #eee !important;
+					}
+
+					.searchslide {
+					    position: absolute;
+					    left: 5px;
+					    top: 9px;
+					    right: 0;
+					    width: 25px;
+					}
+
+					.slid-left {
+					    left: 50px !important;
+					}
+					.slid-right {
+					    left: 110px !important;
+					}
+
 
 	.back {
 		width: 20px;
@@ -355,8 +435,9 @@ body {
 	.share {
 		width: 25px;
 		position: absolute;
-		float:right;
-		margin: -25px 0 0 280px;
+		right: 0;
+		margin: -25px 10px 0 280px;
+
 	}
 
 
@@ -481,6 +562,8 @@ input[type="checkbox"] {
               padding .25s;
   width: 44px;
   vertical-align: top;
+  float: right;
+  margin-top:0;
   
 /* THE ACTUAL CIRCLE OF THE SWITCH */
 
@@ -519,6 +602,7 @@ input[type="checkbox"] {
                   left .15s .25s,
                   right .25s .175s;
     }
+
   }
 }
 
